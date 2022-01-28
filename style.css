@@ -1,0 +1,182 @@
+@import './animation-framework.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --primary: #693cd3;
+    --dark: #161616;
+    --pure: #FFF;
+    --ternary: #b1b0b1;
+    --light: #F2F2F2;
+}
+
+body {
+    background: var(--ternary);
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    height: 100px;
+    transition: 0.6s;
+    background: var(--dark);
+}
+.nav-fixed {
+    height: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background: #212529;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)
+}
+
+#home {
+    color: var(--light);
+    height: 100vh;
+    padding-top: 150px;
+    background: var(--dark);
+}
+
+#wel-text {
+    height: 200px;
+    text-align: center;
+}
+.scroll-text {
+    margin-top: 150px;
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+    animation-delay: 1.5s!important;
+}
+
+
+.flex-n-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pic-template {
+    height: 50px;
+    width: 125px;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 2px;
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+    animation-delay: 1s;
+}
+
+#name-n-text {
+    opacity: 0;
+    animation-delay: 1s;
+}
+#name-n-text h1, #name-n-text p, #wel-text h1 {
+    letter-spacing: 2px;
+}
+#name-n-text h2 {
+    letter-spacing: 5px;
+}
+#name-n-text p img {
+    height: 30px;
+    width: 90px;
+}
+#wel-text span, #name-n-text span {
+    color: var(--primary);
+}
+
+.about-text {
+    width: 450px;
+    letter-spacing: 0;
+}
+
+#about-me {
+    height: 700px;
+    background: url("./images/962592.jpg");
+    opacity: 0;
+    color: #fff;
+}
+
+#my-skills {
+    background: rgb(0,208,242);
+    background: linear-gradient(216deg, rgba(0,208,242,1) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgba(255,0,241,1) 100%, rgba(12,58,218,1) 120%);
+}
+.skill-table {
+    width: 100%;
+    max-width: 550px;
+}
+.skill-name {
+    margin: 10px 0;
+}
+.skill-bar {
+    height: 8px;
+    background: #cacaca;
+    border-radius: 8px;
+}
+.skill-per {
+    height: 8px;
+    border-radius: 8px;
+    position: relative;
+}
+.skill-per-fill {
+    height: 100%;
+    background: var(--primary);
+}
+.skill-per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 4px;
+    background: #1fb2d6;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -32px;
+    right: 0;
+    transform: translateX(50%);
+}
+.skill-per::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #1fb2d6;
+    top: -12px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+#what-i-like {
+    background: #f0d2f1;
+}
+
+.box-text {
+    width: 100px;
+    color: #0066ff;
+    border: 2px solid #0066ff;
+    padding: 10px;
+}
+
+.box-text p {
+    margin: 0;
+    font-size: 18px;
+}
+
+#cv {
+    background: linear-gradient(to bottom left, #33cc33 0%, #0099ff 100%);
+}
+
+.darken-bg {
+    background: rgba(0, 0, 0, 0.8);
+}
+.white-bg {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+
+
+@media only screen and (min-width: 992px) {
+    #about-me section:nth-child(1) {
+        background: rgb(207, 129, 92);
+        clip-path: polygon(0 0, 0 100%, 100% 100%, 45% 0);
+    }
+}

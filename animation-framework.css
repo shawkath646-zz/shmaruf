@@ -1,0 +1,85 @@
+.opacity-ani {
+    animation: opacityAni .5s forwards;
+}
+
+@keyframes opacityAni {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.slide-up-ani {
+    animation: slideUpAni 0.5s forwards;
+}
+
+@keyframes slideUpAni {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slide-down-ani {
+    animation: slideDownAni 0.5s forwards;
+}
+
+@keyframes slideDownAni {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slide-left-ani {
+    animation: slideLeftAni 0.5s forwards;
+}
+
+@keyframes slideLeftAni {
+    from {
+        opacity: 0;
+        transform: translate3d(-50px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slide-right-ani {
+    animation: slideRightAni 0.5s forwards;
+}
+
+@keyframes slideRightAni {
+    from {
+        opacity: 0;
+        transform: translate3d(50px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.bar-fill-ani {
+    transform-origin: left;
+    animation: barFillAni 2.5s forwards;
+}
+@keyframes barFillAni {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
