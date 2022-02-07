@@ -57,14 +57,12 @@ nav {
 }
 
 #pic-template {
-    height: 50px;
-    width: 125px;
-    color: var(--primary);
-    border: 2px solid var(--primary);
-    border-radius: 2px;
-    opacity: 0;
     transform: translate3d(0, 50px, 0);
     animation-delay: 1s;
+}
+#pic-template img {
+    height: 400px;
+    width: 260px;
 }
 
 #name-n-text {
@@ -91,7 +89,7 @@ nav {
 }
 
 #about-me {
-    height: 700px;
+    height: 750px;
     background: url("./images/962592.jpg");
     opacity: 0;
     color: #fff;
@@ -163,6 +161,47 @@ nav {
 
 #cv {
     background: linear-gradient(to bottom left, #33cc33 0%, #0099ff 100%);
+}
+
+#educational-history {
+    background: linear-gradient(to bottom right, #45aff5 0%, #ffffff 100%);
+}
+
+.social-icons {
+    width: 500px;
+}
+.social-icons a {
+    border-radius: 2px;
+    height: 70px;
+    text-decoration: none;
+}
+.social-icons a {
+    color: #000;
+    font-size: 20px;
+}
+.social-icons a i {
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+    color: #fff;
+}
+.social-icons a:nth-child(1) {
+    background: #369ff5;
+}
+.social-icons a:nth-child(2) {
+    background: #ce0fe7;
+}
+.social-icons a:nth-child(3) {
+    background: #e70f57;
+}
+.social-icons a:nth-child(4) {
+    background: #28e066;
+}
+.social-icons a:nth-child(5) {
+    background: #4fa7f0;
+}
+.social-icons a:nth-child(6) {
+    background: #2a2a2b;
 }
 
 .darken-bg {
